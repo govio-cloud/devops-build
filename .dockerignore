@@ -1,0 +1,5 @@
+node_modules/
+
+# Build folder (should be recreated inside the Docker container)
+build/
+dist/
