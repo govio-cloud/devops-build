@@ -1,5 +1,4 @@
-node_modules/
+.git
+*.md
+*.gitignore
 
-# Build folder (should be recreated inside the Docker container)
-build/
-dist/
