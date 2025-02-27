@@ -3,7 +3,7 @@ set -e
 
 # Define Docker container name and image
 CONTAINER_NAME="my-container"
-IMAGE_NAME="govio/dev/devops-build:latest"  # You can update this dynamically based on branch or other criteria
+IMAGE_NAME="govio/devops-build:latest"  # You can update this dynamically based on branch or other criteria
 
 # Stop and remove any running container with the same name
 docker stop $CONTAINER_NAME || true
