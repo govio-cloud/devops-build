@@ -1,1 +1,1 @@
-docker build -t govio/devops-build:latest .
+sudo docker build -t govio/devops-build:latest .
