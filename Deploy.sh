@@ -3,7 +3,7 @@
 # Define the EC2 instance's IP and SSH user
 EC2_USER="ubuntu"
 EC2_IP="52.39.241.25"
-PRIVATE_KEY_PATH="/home/ubutu/.ssh/id_rsa"  # Path to private key on Jenkins server
+PRIVATE_KEY_PATH="/home/ubuntu/.ssh/id_rsa"  # Path to private key on Jenkins server
 
 
 # Define Docker image
