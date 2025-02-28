@@ -1,1 +1,1 @@
- docker build -t govio/dev:latest .
+ docker build -t govio/react-app:latest .
