@@ -8,6 +8,12 @@ PRIVATE_KEY_PATH="/home/ubuntu/.ssh/id_rsa.pem"  # Path to private key on Jenkin
 # Define Docker image
 DOCKER_IMAGE="govio/dev:latest"
 
+
+# Automatically add the EC2 instance to known hosts
+mkdir -p ~/.ssh
+ssh-keyscan -H $EC2_IP >> ~/.ssh/known_hosts
+
+
 # SSH into the EC2 instance, pull the Docker image, and run the container
 ssh -i ${PRIVATE_KEY_PATH} ${EC2_USER}@${EC2_IP} << EOF
     # Update the EC2 instance
