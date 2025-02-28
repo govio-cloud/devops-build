@@ -2,6 +2,7 @@
 
 #User
 EC2_USER="ubuntu"
+#Target instance ip
 EC2_IP="52.39.241.25"
 PRIVATE_KEY_PATH="/home/ubuntu/aregon_aws_kp1.pem"  # Path to private key on Jenkins server
 
