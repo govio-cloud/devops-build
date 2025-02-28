@@ -9,9 +9,11 @@ PRIVATE_KEY_PATH="/home/ubuntu/aregon_aws_kp1.pem"  # Path to private key on Jen
 DOCKER_IMAGE="govio/dev:latest"
 
 
-# Automatically add the EC2 instance to known hosts
-mkdir -p ~/.ssh
-ssh-keyscan -H $EC2_IP >> ~/.ssh/known_hosts
+# Ensure the key is owned by the correct user
+sudo chown ubuntu:ubuntu $PRIVATE_KEY_PATH
+
+# Set the correct permissions
+chmod 600 $PRIVATE_KEY_PATH
 
 
 # SSH into the EC2 instance, pull the Docker image, and run the container
