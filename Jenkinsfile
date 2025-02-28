@@ -39,10 +39,7 @@ stage('Push Docker Image to Docker Hub') {
 
         stage('Deploy to Server') {
             steps {
-                when { 
-                expression { BRANCH_NAME == 'master' } 
-            } 
-                script {
+                   script {
                     sh """
                     chmod +x Deploy.sh
                     ./Deploy.sh
